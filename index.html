@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>شركة تصميم </title>
+    <style>
+       body,h1,h2,h3,h4,h5,h6 {font-family: "Coiro", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+/* رأس صورة كاملة الارتفاع */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/lab.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+  
+}
+
+        
+    </style>
+</head>
+<body>
+   <!-- اضاصة زر الرئيسية-->
+   <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button " style=" font-weight: bold ;  ">الرئيسية </a>
+    <!-- اضاصة ازر الصفحة الرئيسية--> 
+    <div class="w3-right w3-hide-small " style=" font-weight: bold ;  ">
+        <a href="#contact" class="w3-bar-item w3-button">للتواصل معنا <i class="fa fa-envelope"></i></a>
+        <a href="#about" class="w3-bar-item w3-button ">من نحن</a>
+        <a href="#pricing" class="w3-bar-item w3-button">اسعار الاشتراك <i class="fa fa-usd"></i></a>
+        <a href="#team"  class="w3-bar-item w3-button  ">فريق العمل <i class="fa fa-user"> </i></a>
+        <a href="#work" class="w3-bar-item w3-button">اعمالنا <i class="fa fa-th"></i></a>
+    </div>
+    <!--اخفاء الازرار الرئيسية وتحويلها الى ايقونات في الشاشات الصفيرة-->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class=" fa fa-bars"></i>
+        </a>
+    </div>   
+   </div>
+   <!--انشاء الشريط الجانبي على الشاشات الصغير وعند النقر علية يظهر الازرار الرئيسية-->
+   <nav class="w3-display-right w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"style ="text-align: right"> <i><img src="images/close-button-png-30228.png" alt="ايقونة" width="30px"></i> خروج </a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button" style ="text-align: right">اعمالنا</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button" style ="text-align: right">فريق العمل</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button" style ="text-align: right">اسعار الاشتراك</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button  " style ="text-align: right">من نحن</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style ="text-align: right">للتواصل معنا</a>
+    </nav>
+   <!--راس الصفحة -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min " id="home">
+        <div class="w3-display-right w3-text-white " style="padding:48px">
+          <span class="w3-jumbo w3-hide-small " style=" font-weight: bold ;font-size: 28px;">ابداء بالعمل</span><br>
+          <span class="w3-xxlarge w3-hide-large w3-hide-medium" style=" font-weight: bold ;font-size: 28px;">ابداء بالعمل</span><br>
+          <span class="w3-large" style=" font-weight: bold ;font-size: 28px;">توقف عن أهدار وقتك الثمين </span>
+          <p><a href="#about" class=" w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">تعلم المزيد وابدء من اليوم</a></p>
+        </div> 
+    <!--اضافة ايقونات -->    
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </header>
+
+    <!-- تعريف عن الشركة  -->  
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center" style=" font-weight: bold ;font-size: 28px;">معلومات عن الشركة </h3>
+        <p class="w3-center w3-large" style=" font-weight: bold ;">المظاهر الرئيسية لشركتنا</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+          <div class="w3-quarter">
+            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large" style=" font-weight: bold ;">التجاوب</p>
+            <p style="font-weight: bold;">اسعاد العميل ، اجراءات المراقبة المكثفة</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large" style=" font-weight: bold ;">الاهتمام</p>
+            <p style="font-weight: bold;">الاهتمام بالعميل ، سيقوم الموظف بتلبية رغبات العميل</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large" style=" font-weight: bold ;">التصميم</p>
+            <p style="font-weight: bold;">تصميم احترافي ، الاهتمام بكافة التفاصيل</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large" style=" font-weight: bold ;">الدعم الفني</p>
+            <p style="font-weight: bold;">سرعة التجاوب مع العميل ، اجراءات المراقبة المكثفة،<br> الدوام 24 ساعة</p>
+          </div>
+        </div>
+      </div>
+    <!-- قسم الترويج" -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+        <div class="w3-row-padding ">
+          <div class="w3-col m6 w3-right" >
+            <br><br><br>
+            <h3 style="text-align: center; font-weight: bold ;font-size: 28px;">نحن نعمل في التصوير والتصاميم</h3>
+            <p style="text-align: center; font-weight: bold;" >تصميم احترافي ، الاهتمام بكافة التفاصيل</p>
+            <p style="text-align: center; font-weight: bold;"><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> عرض اعمالنا</a></p>
+          </div>
+          <div class="w3-col m6 w3-container" >
+            <img class="w3-image w3-round-large" src="images/cam.jpg" alt="Buildings" width="900" height="394">
+          </div>
+        </div>
+      </div>
+    <!-- فريق العمل --> 
+    <div class="w3-container" style="padding:128px 16px" id="team">
+        <h3 class="w3-center" style=" font-weight: bold ;font-size: 28px;">فريق العمل</h3>
+        <p class="w3-center w3-large" style=" font-weight: bold ;">هم الذين يديرون هذه الشركة</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card w3-round-large" style="text-align:center ;">
+              <img src="images/m1.png" alt="مازن العريقي" style="width:100%">
+              <div class="w3-container">
+                <h3>مازن العريقي</h3>
+                <p class="w3-opacity">الرئيس التنفيذي  والمؤسس</p>
+                <p>  مدير الشركة </p>
+                <p><button class="w3-button w3-black w3-block w3-round-large"><i class="fa fa-envelope"></i> اتصال</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card w3-round-large" style="text-align:center ;">
+              <img src="images/m2.png" alt="اسامة السامعي" style="width:100%">
+              <div class="w3-container">
+                <h3 >اسامة السامعي</h3>
+                <p class="w3-opacity">المدير الفني</p>
+                <p>الاشراف على مايتعلق بالامور التقنية   والفنية</p>
+                <p><button class="w3-button w3-black w3-block w3-round-large"><i class="fa fa-envelope"></i> اتصال</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card w3-round-large" style="text-align:center ;">
+              <img src="images/m3.png" alt="عبدالرحمن العبسي" style="width:100%">
+              <div class="w3-container">
+                <h3 >عبدالرحمن العبسي</h3>
+                <p class="w3-opacity"> المدير التنفيذي</p>
+                <p>اتقان التصميم والرؤية الابداعية في تفكير المصمم  </p>
+                <p><button class="w3-button w3-black w3-block w3-round-large"><i class="fa fa-envelope"></i> اتصال</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card w3-round-large " style="text-align:center ;" >
+              <img src="images/m4.png" alt="يزن الغيثي" style="width:100%">
+              <div class="w3-container">
+                <h3  >يزن الغيثي</h3>
+                <p class="w3-opacity">علاقات عامة</p>
+                <p>تواصل افضل مع العملاء  وفريق العمل </p>
+                <p><button class="w3-button w3-black w3-block w3-round-large"><i class="fa fa-envelope"></i> اتصال</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+     <!-- قسم العروض الترويجية والاحصائيات --> 
+     <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+        <div class="w3-quarter" style=" font-weight: bold ;font-size: 22px;">
+          <span class="w3-xxlarge" >14+</span>
+          <br>شركاء
+        </div>
+        <div class="w3-quarter" style=" font-weight: bold ;font-size: 22px;">
+          <span class="w3-xxlarge">55+</span>
+          <br>المشاريع المنجزة
+        </div>
+        <div class="w3-quarter" style=" font-weight: bold ;font-size: 22px;">
+          <span class="w3-xxlarge">89+</span>
+          <br>العملاء السعداء
+        </div>
+        <div class="w3-quarter" style=" font-weight: bold ;font-size: 22px;">
+          <span class="w3-xxlarge">150+</span>
+          <br>الاجتماعات
+        </div>
+      </div>
+
+    <!-- قسم اعمالنا -->  
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center" style=" font-weight: bold ;font-size: 28px;">اعمالنا</h3>
+        <p class="w3-center w3-large" style=" font-weight: bold ;">ما الذي تم انجازة للعملاء</p>
+      
+        <div class="w3-row-padding" style="margin-top:64px">
+          <div class="w3-col l3 m6">
+            <img src="images/Dis1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A PRADA">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="images/Dis2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A DESIGN NOVEL">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="images/Dis3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A PRADA">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="images/Dis4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A CSS">
+          </div>
+        </div>
+      
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col l3 m6">
+            <img src="images/Dis5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A CROWN">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="images/Dis6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A RAYA ADVERTISING">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="images/Dis7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A RAYA ADVERTISING">
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="images/Dis8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  w3-round-large" alt="A RAYA ADVERTISING">
+          </div>
+        </div>
+      </div>
+      
+    <!--شروط الصور بالحجم الكامل عند النقر--> 
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image"><i><img src="images/close-button-png-30228.png" alt="ايقونة" width="60px"></i> خروج </span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div> 
+    <!-- قسم المهارات -->
+    <div class=" w3-container w3-light-grey w3-padding-64">
+        <div class="w3-row-padding">
+        <div class="w3-right w3-col m6">
+            <br><br>
+            <h3 style="text-align: center ; font-weight: bold ;font-size: 28px;">مهاراتنا</h3>
+            <p style="text-align: right; font-weight: bold ; font-size: 18px;">نحن خبراء في التصميم الجرافك ونعرف كيفية تقديم علاماتك التجارية الى العالم ، يتمتع المصممون لدينا بالخبرة في التعامل مع مشاريع التصميم في الوقت المحدد وانشاء صور مرئية لتلبية المتطليات التجارية والترويحية<br>
+         </p>
+            <p style="text-align: right; font-weight: bold;font-size: 18px;">نركز على إنشاء منتجات بسيطة وقابلة للاستخدام ومبتكرة المفاهيم المرئية التي تلهم وتجذب العملاء لنشاطك التجاري<br>
+            </p>
+        </div>
+        <div class=" w3-left w3-col m6" >
+            <p class="" style=" font-weight: bold ;font-size: 18px;"><i class="fa fa-camera w3-margin-right"></i>التصوير</p>
+            <div class="w3-grey w3-round-large">
+            <div class="w3-container w3-dark-grey w3-center w3-round-large" style="width:90%">90%</div>
+            </div>
+            <p class="" style=" font-weight: bold ;font-size: 18px;"><i class="fa fa-desktop w3-margin-right" ></i> التصميم</p>
+            <div class="w3-grey w3-round-large">
+            <div class="w3-container w3-dark-grey w3-center w3-round-large" style="width:85%">85%</div>
+            </div>
+            <p class=""style=" font-weight: bold ;font-size: 18px;"><i class="fa fa-photo w3-margin-right" ></i>تصميم ويب</p>
+            <div class="w3-grey w3-round-large">
+            <div class="w3-container w3-dark-grey w3-center w3-round-large" style="width:75%">75%</div>
+            </div>
+        </div>
+        </div>
+    </div> 
+    <!-- اسعار الاشتراك  -->
+        <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+            <h3 style=" font-weight: bold ;font-size: 28px;"> اسعار الاشتراك</h3>
+            <p class="w3-large" style=" font-weight: bold ;">اختر خطة تسعير تناسب احتياجاتك</p>
+            <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32 w3-round-large">أساسي</li>
+                <li class="w3-padding-16"><b>10GB</b> التخزين</li>
+                <li class="w3-padding-16"><b>10</b> رسائل البريد الإلكتروني</li>
+                <li class="w3-padding-16"><b>10</b> المجالات</li>
+                <li class="w3-padding-16"><b>بلا حدود</b>  الدعم الفني</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">$ 5</h2>
+                    <span class="w3-opacity">كل شهر</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-black w3-padding-large w3-round-large">اشتراك</button>
+                </li>
+                </ul>
+            </div>
+            <div class="w3-third ">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-red w3-xlarge w3-padding-48 w3-round-large">المتقدم</li>
+                <li class="w3-padding-16"><b>25GB</b> التخزين</li>
+                <li class="w3-padding-16"><b>25</b> رسائل البريد الإلكتروني</li>
+                <li class="w3-padding-16"><b>25</b> المجالات</li>
+                <li class="w3-padding-16"><b>بلا حدود</b> الدعم الفني</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">$ 15</h2>
+                    <span class="w3-opacity">كل شهر</span>
+                </li>
+                <li class="w3-light-grey w3-padding-24">
+                    <button class="w3-button w3-red w3-padding-large w3-round-large"> اشتراك</button>
+                </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section ">
+                <ul class="w3-ul w3-white w3-hover-shadow  ">
+                <li class="w3-black w3-xlarge w3-padding-32 w3-round-large">المتميز</li>
+                <li class="w3-padding-16"><b>50GB</b> التخزين</li>
+                <li class="w3-padding-16"><b>50</b> رسائل البريد الإلكتروني</li>
+                <li class="w3-padding-16"><b>50</b> المجالات</li>
+                <li class="w3-padding-16"><b>بلا حدود</b> الدعم الفني</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">$ 30</h2>
+                    <span class="w3-opacity">كل شهر </span>
+                </li>
+                <li class="w3-light-grey w3-padding-24 ">
+                    <button class="w3-button w3-black w3-padding-large w3-round-large" >اشتراك </button>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    <!-- قسم الاتصال -->
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+            <h3 class="w3-center" style=" font-weight: bold ;font-size: 28px;">للتواصل معنا</h3>
+            <p class="w3-center w3-large" style=" font-weight: bold ;">: للتواصل معنا يرجى ارسال رسالة</p>
+            <div style="margin-top:48px ; text-align: center; font-weight: bold;">
+            <p>اليمن , اب <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin"></i></p>
+            <p>967775577941<i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i></p>
+            <p>Engit202022@gmail.com<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i></p>
+            <br>
+            <form action="/action_page.php" target="_blank" >
+                <p><input class="w3-input w3-border" type="text" placeholder="الاسم" required name="Name" style="text-align:right ;"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="عنوان البريد الإلكتروني" required name="Email"style="text-align:right ;"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="الموضوع" required name="Subject"style="text-align:right ;"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="نص الرسالة" required name="Message"style="text-align:right ;"></p>
+                <p>
+                <button class="w3-button w3-black" type="submit">
+                    <i class="fa fa-paper-plane" style=" font-weight: bold ;"></i> ارسال رسالة
+                </button>
+                </p>
+            </form>  
+         <!-- صورة الموقع -->
+            <img src="images/loc.jpg" class="w3-image   w3-round-large" style="width:100%;margin-top:48px">
+            </div>
+        </div>  
+        <!-- التذييل -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-light-grey" style=" font-weight: bold ;"><i class="fa fa-arrow-up w3-margin-right"></i>الانتقال الى الاعلى</a>
+            <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
+        
+        <script>
+        // معرض الصور
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+        
+        
+        // التبديل بين إظهار وإخفاء الشريط الجانبي عند النقر فوق رمز القائمة
+        var mySidebar = document.getElementById("mySidebar");
+        
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            } else {
+            mySidebar.style.display = 'block';
+            }
+        }
+        
+        // أغلق الشريط الجانبي بزر الإغلاق
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+        
+        </script>
+    
+
+</body>
+</html>
